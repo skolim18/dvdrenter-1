@@ -1,6 +1,6 @@
 
 module.exports = {
-    port: process.env.port,
+    port: process.env.PORT,
     dbconn: process.env.dbconnection
 }
 /*
