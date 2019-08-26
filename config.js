@@ -1,4 +1,4 @@
-console.log(result)
+
 module.exports = {
     port: process.env.port,
     dbconn: process.env.dbconnection

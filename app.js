@@ -7,10 +7,10 @@ const userRouter = require('./routes/users');
 const dvdsRouter = require('./routes/dvds');
 const authMiddleware = require('./middlewares/auth').authMiddleware;
 const port = require('./config').port
-console.log(port)
+
 const app = express();
 
-console.log(process.env);
+
 
 app.use(bodyParser.json());
 app.use('/users', userRouter);
