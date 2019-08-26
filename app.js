@@ -21,4 +21,4 @@ app.use((req, res, next) => res.status(404).send("not found!"));
 //const port = process.env.port;
 
 
-db.initDbConnection(() => db.seedDb(() => app.listen(port, () => console.log(`Hello, ${port}`))));
+db.initDbConnection(() => app.listen(port, () => console.log(`Hello, ${port}`))));
