@@ -11,7 +11,9 @@ const port = require('./config').port
 const app = express();
 
 
-
+app.get("/", (req, res, next) => {
+    res.send(console.log("hello world"));
+})
 app.use(bodyParser.json());
 app.use('/users', userRouter);
 app.use(authMiddleware);
